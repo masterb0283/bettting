@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tete.css">
+
+    <script>
+        window.onload = function() {
+            // Handle user name display from local storage
+            const name = localStorage.getItem('userName');
+            const displayElement = document.getElementById('userNameDisplay');
+            if (name) {
+                displayElement.textContent = `Welcome, ${name}!`;
+            } else {
+                displayElement.textContent = 'Welcome, Guest!';
+            }
+
+            // Handle single checkbox selection
+            const checkboxes = document.querySelectorAll('.checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        checkboxes.forEach(box => {
+                            if (box !== this) {
+                                box.checked = false;
+                            }
+                        });
+                    }
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="general2">
+        <h1>You Are <span id="userNameDisplay"></span>!</h1>
+        <p>We're glad to have you as a VIP member.</p>
+        <b>We assure you 100% winning guarantee Fixed Match Game</b>
+    </div>
+
+    <div class="general4">
+        <h2>This is a real and legit platform which will make you feel better and give you a better life!</h2>
+        <h2>This organization is assuring you that you will never regret partnering with us!</h2>
+        <h1>First business matters a lot just trust the process so that you can testify to others and introduce them into FMCS BETTING ORGANIZATION!</h1>
+    </div>
+
+    <div class="general5">
+        <ul>KINDLY SELECT YOUR PLAN</ul>
+        <div>
+            <li>$100 for DAILY subscription</li>
+            <input type="checkbox" class="checkbox">
+        </div>
+        <div>
+            <li>$200 for WEEKLY SUBSCRIPTION</li>
+            <input type="checkbox" class="checkbox">
+        </div>
+        <div>
+            <li>$400 for MONTHLY SUBSCRIPTION</li>
+            <input type="checkbox" class="checkbox">
+        </div>
+    </div>
+</body>
+</html>

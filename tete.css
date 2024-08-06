@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body  {
+    /* background-image: url(.//images\ n1.jpeg); */
+    background-color: black;
+    color: white;
+    /* background-image:cover; */
+    background-size:cover ;
+        
+}
+h4{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin-top:50px;
+}
+
+.general {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100PX;
+    font-size: 20px;
+
+}
+
+.general h1 {
+    display: flex;
+    background-image: linear-gradient(to right, rgb(235, 51, 51), green);
+    border-radius: 10px;
+    color: black;
+}
+
+.general p {
+    font-size: 40px;
+}
+
+.general2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 10px; */
+    margin-top: 40px;
+   border-bottom: 5px solid #A28C5C;
+}
+
+.general2 b {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.general2 input {
+    font-size: 20px;
+    margin: 8px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+
+.btn{
+    display: flex;
+    font-size: 25px;
+    background-image: linear-gradient(to right,rgb(77, 70, 70),#06b841);
+    padding: 6px 12px;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    animation: bounceAnimation 2s infinite;
+}
+.btn:hover{
+    color: blue;
+}
+.general3 button {
+    font-size: 20px;
+    margin-left: 70%;
+    margin-top: 30px;
+    background-image: linear-gradient(to bottom, green, red);
+    border-radius: 50px;
+    padding: 8px 15px;
+    font-family: serif;
+    margin-bottom: 50px;
+    cursor: pointer;
+    animation: buttonAnimation 2s infinite;
+}
+.general3 button:hover{
+    color: white;
+    background-color: black;
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+        background-color: green;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: yellow;
+    }
+    100% {
+        transform: scale(1);
+        background-color: green;
+    }
+}
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(0);
+        background-color: rgb(77, 70, 70);
+    }
+    50% {
+        transform: translateY(-10px);
+        background-color: #09c766;
+    }
+    100% {
+        transform: translateY(0);
+        background-color: rgb(77, 70, 70);
+    }
+}
+.general4{
+    margin-top: 40px;
+}
+.general4 h2{
+    display: flex;
+    margin-left: 50px;
+    /* margin-top: 60px; */
+    color: white;
+}
+.general4 h1{
+    display: flex;
+    margin-left: 80px;
+    margin-top: 60px;
+    
+}
+.general5{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+.general5 div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.general5 input[type="checkbox"] {
+    margin-right: 20px;
+    margin-left: 30px;
+    transform: 30px;
+    transform: scale(2.5); /* Increase the size of the checkbox */
+    /* margin-right: 10px; */
+
+}
